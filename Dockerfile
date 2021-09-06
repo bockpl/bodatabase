@@ -182,6 +182,8 @@ ansible-playbook Playbooks/install_dep_Module.yml --connection=local --extra-var
 #ansible-playbook Playbooks/install_dep_TensorBoard.yml --connection=local --extra-vars "var_host=127.0.0.1" && \
 # Instalacja wymagan dla oprogramowanie MatLab
 #ansible-playbook Playbooks/install_dep_MatLab.yml --connection=local --extra-vars "var_host=127.0.0.1" && \
+# Instalacja wymagan dla ssh
+ansible-playbook Playbooks/install_boaccess_ssh.yml --connection=local --extra-vars "var_host=127.0.0.1" && \
 # Instalacja narzedzi do interaktywnej wpracy w konsoli dla uzytkownikow klastra
 ansible-playbook Playbooks/install_boaccess_tools.yml --connection=local --extra-vars "var_host=127.0.0.1" && \
 # Instalacja glibc-devel dla gcc
